@@ -60,11 +60,11 @@ const App: React.FC = () => {
             </div>
           </div>
           
-          <h1 className="mt-5 text-2xl md:text-3xl font-bold tracking-tight text-white font-conthrax uppercase px-2">
+          <h1 className="mt-5 text-lg sm:text-2xl md:text-3xl font-bold tracking-tight text-white font-conthrax uppercase px-2 leading-tight">
             {PROFILE_DATA.name}
           </h1>
           
-          <p className="mt-3 text-white/90 text-sm md:text-base leading-relaxed max-w-[280px] md:max-w-sm font-medium">
+          <p className="mt-3 text-white/90 text-xs sm:text-sm md:text-base leading-relaxed max-w-[280px] md:max-w-sm font-medium">
             {PROFILE_DATA.bio}
           </p>
 
