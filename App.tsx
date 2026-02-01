@@ -44,7 +44,7 @@ const App: React.FC = () => {
       <main className="relative z-10 w-full max-w-[480px] px-5 py-10 md:py-16 flex flex-col items-center">
         
         {/* Profile Section */}
-        <div className="flex flex-col items-center text-center mb-8 md:mb-10 animate-fade-up">
+        <div className="flex flex-col items-center text-center mb-8 md:mb-12 animate-fade-up">
           <div className="relative group">
             <div className="absolute -inset-1 bg-white/30 rounded-full blur opacity-40 group-hover:opacity-60 transition duration-1000"></div>
             <div className="relative w-28 h-28 md:w-32 md:h-32 rounded-full border-4 border-white bg-white overflow-hidden shadow-2xl flex items-center justify-center p-1.5">
@@ -60,11 +60,11 @@ const App: React.FC = () => {
             </div>
           </div>
           
-          <h1 className="mt-5 text-lg sm:text-2xl md:text-3xl font-bold tracking-tight text-white font-conthrax uppercase px-2 leading-tight">
+          <h1 className="mt-5 text-xl sm:text-2xl md:text-3xl font-bold tracking-tight text-white font-conthrax uppercase px-2 leading-tight">
             {PROFILE_DATA.name}
           </h1>
           
-          <p className="mt-3 text-white/90 text-xs sm:text-sm md:text-base leading-relaxed max-w-[280px] md:max-w-sm font-medium">
+          <p className="mt-3 text-white/90 text-sm md:text-base leading-relaxed max-w-[280px] md:max-w-sm font-medium">
             {PROFILE_DATA.bio}
           </p>
 
@@ -85,19 +85,19 @@ const App: React.FC = () => {
           </div>
         </div>
 
-        {/* Links Section */}
-        <div className="w-full space-y-1">
+        {/* Links Section - Spacing improved */}
+        <div className="w-full flex flex-col gap-4">
           {LINKS.map((link, index) => (
             <LinkButton 
               key={link.id} 
               link={link} 
-              delay={150 + (index * 80)} 
+              delay={150 + (index * 100)} 
             />
           ))}
         </div>
 
         {/* Footer */}
-        <footer className="mt-10 md:mt-12 flex flex-col items-center text-center opacity-70 animate-fade-up" style={{ animationDelay: '800ms' }}>
+        <footer className="mt-12 md:mt-16 flex flex-col items-center text-center opacity-70 animate-fade-up" style={{ animationDelay: '800ms' }}>
           <p className="text-[10px] md:text-xs font-bold uppercase tracking-[0.2em] text-white/90">
             © 2026 EASYTECH TELECOM
           </p>
